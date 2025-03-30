@@ -13,11 +13,11 @@ spec:
         app: k8s-web-hello
     spec:
       containers:
-      - name: k8s-web-hello
-        image: dnikolskii/k8s-web-hello-ru
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "250m"
-        ports:
-        - containerPort: 3000
+        - name: k8s-web-hello
+          image: dnikolskii/k8s-web-hello-ru
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "250m"
+          ports:
+            - containerPort: 3000
